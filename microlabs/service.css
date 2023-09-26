@@ -1,0 +1,270 @@
+.menu .menu-service{
+  color: #6b227a;
+  position: relative;
+
+  }
+  .menu .menu-service::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 2px; /* Adjust the height for the underline */
+      background-color: #6b227a; /* Adjust the color for the underline */
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+  }
+.service{
+    background-image: url(photo/services-bg.png);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    width: 100%;
+    height: 600px;
+    padding: 5px;
+  }
+  .service-info{
+    
+    margin-left: 50%;
+  }
+  .service-info h1{
+    color: #fff;
+    font-size: 3rem;
+  }
+  .service-info span{
+    color: rgb(190, 189, 189);
+  }
+
+
+  .service2-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1200px;
+    
+}
+.service-grid2{
+    display: block;
+    width: 300px;
+    margin-left: 0;
+    
+   
+}
+
+  .service-item2{
+    margin-left: 10%;
+    padding: 14px;
+    margin-bottom: -3rem;
+}
+.service-item2 div{
+    padding: 14px;
+    width: 300px;
+    margin-bottom: -2rem;
+    background-color: #fff;
+}
+.service-item2   .Mass, .molec, .Chem, .cyto, .hema {
+    background-color: #fff;
+    padding: 20px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.service-item2 .micro,
+.service-item2 .Mass,
+.service-item2 .molec,
+.service-item2 .Chem,
+.service-item2 .cyto,
+.service-item2 .hema{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width:300px;
+    margin-left: 20%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+.service-item2 .micro:hover,
+.service-item2 .Mass:hover,
+.service-item2 .molec:hover,
+.service-item2 .Chem:hover,
+.service-item2 .cyto:hover,
+.service-item2 .hema:hover{
+    background-color: skyblue;
+}
+
+.service-item2  .svg2{
+    display: none;
+    /* border: 1px solid red; */
+    width: 50px;
+    color: #2a227a;
+    background: none;
+   
+}
+
+
+.service-item2 .svg{
+    background: none;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    color: #2a227a;
+    
+}
+.service-item2 a{
+    margin: auto;
+}
+.service-grid2-1{
+   margin-top: 10%;
+    width: 600px;
+    height: auto;
+    margin-right: 10%;
+}
+.grid2-img{
+    width: auto;
+    
+}
+.grid2-img img{
+    width: 100%;
+    height: 300px;
+   
+}
+
+.service-grid2-1, .service-grid2-2 {
+display: none;
+border-radius: 5px;
+background-color: #fff;
+}
+
+.grid2-info{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.grid2-info a{
+    margin-top: 20px;
+    font-size: .8rem;
+    text-decoration: none;
+    color: #2a227a;
+    margin-left: 50%;
+}
+.service-grid2-1 span, .service-grid2-2 span{
+    padding: 10px;
+    letter-spacing: 1px;
+    color: #333;
+    text-align: justify;
+}
+
+.service-grid2-1.active, .service-grid2-2.active {
+    display: block;
+}
+.selected-tag {
+background-color: skyblue;
+}
+.service-box{
+margin-top: 10%;
+}
+
+.bg-container3{
+  margin-top: 5rem;
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container3 h1{
+  margin-top: 10rem;
+  
+}  
+.bg-container3 h2{
+  color: #2a227a;
+  font-size: 1.2rem;
+}
+.bg-container3 span{
+  color: rgb(117, 117, 117);
+  line-height: 1.5rem;
+}
+.container3-box1-item img, .container3-box2-item img{
+  width: 100%;
+}
+.container3-box1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  grid-gap: 2rem;
+}
+.container3-box2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+  grid-gap: 2rem;
+  padding: 2rem;
+}
+
+.container4-answer-grid{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+}
+.container4-box1, .container4-box2{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+   padding: 20px;
+   grid-gap: 2rem;
+}
+.container4-answer-grid h2{
+   color: #2a227a;
+}
+.container4-answer-grid span{
+   color: rgb(122, 122, 122);
+   line-height: 1.5rem;
+   
+}
+.container4-answer-grid svg{
+   color: #2a227a;
+   width: 30px;
+   height: 30px;
+}
+.container4-box2{
+   margin-top: 3rem;
+}
+.answer-bg{
+   background-color: rgb(228, 240, 245);
+   padding: 20px;
+
+}
+.answer-bg h1{
+   margin-left: 5%;
+}
+
+.container5-service{
+  background-image: none;
+  margin-bottom: 10rem;
+}
+.container5-grid-service{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap: 2rem;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+.service-con5-item{
+  width: 350px;
+  height: auto;
+  margin-bottom: 5rem;
+}
+.service-con5-item img{
+  width: 100%;
+ 
+}
+.service-con5-item h3 {
+  color: #2a227a;
+  width: 300px;
+  margin-left: 0;
+  padding: 10px;
+}
+.service-con5-item span{
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  text-align: justify;
+  
+}

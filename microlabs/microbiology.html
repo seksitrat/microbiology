@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microbiology</title>
+    <link rel="stylesheet" href="centerlabs.css">
+    <link rel="stylesheet" href="loginform.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="reponsive/responsive.css">
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="reponsive/responsive-service.css">
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+   <header>
+        <div class="grid-header1">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg> Call 0909917691</a></li>
+                    <li><a href="#" class="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login 
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                        <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
+                    </svg>
+                    
+                    </a></li>
+                </ul>
+            </div>
+            <div class="containericon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <!-- loginform -->
+            <div id="id01" class="modal">
+    
+                <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img width="100%" src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+            
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                    <button type="submit">Login</button>
+                    <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+            
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+                </form>
+            </div>
+        <!-- loginform -->
+        <div class="grid-header2">
+            <div class="container-navbar">
+                <div class="navbar2" id="navbar2">
+                    <div style="cursor: pointer; "  class="logo"><img width="100%" height="50px" style="object-fit: cover;" src="photo/logo.png" alt=""></div>
+                    <div class="menu">
+                        <ul >
+                            <li><a href="centerlabs.html">Home</a></li>
+                            <li class="menu-service"><a href="#">Services</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Locations</a></li>
+                        </ul>
+                    </div> 
+                    <div class="contact">
+                        <ul>
+                            <li><a href="#">Pay Your Bill</a></li>
+                            <li><a href="#">View Results</a></li>
+                        </ul>
+                        <button>Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </header>
+
+    <div class="container">
+    <div class="hero service">
+        <div class="hero-info service-info">
+        <h1>Testing and services <br> that lead to results.</h1>
+        <span>Make informed care decisions with <br> confidence in every diagnosis.</span>
+        <br><br>
+        <button>Get Your Dedicated Rep</button>
+        </div>
+    </div>
+   </div>
+
+    <div class="container2">
+        <div class="department-info">
+            <a class="slide-from-bottom" href="#" style="color: #333; font-size: 1.3rem; letter-spacing: 2px;font-weight: bold;">DEPARTMENTS</a>
+            <div class="viewmore">
+                <a class="slide-from-bottom" href="#" style="color:rgb(75, 75, 236); font-size: 1rem; font-weight: bold;">View Full Test Direction ></a>
+            </div>
+        </div>
+        <div class="whatever">
+            <h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+              </svg> Whatever the test, it’s our department.</h1>
+        </div>
+
+        <div class="service2-grid">
+            <div class="grid-depart service-grid2">
+                <div class="service-item2 depart-item " >
+                    <div class="micro ">
+                        <div class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </div>
+                        <a id="microbiology-tag" class="slide-from-bottom" href="#" data-tab="tab-microbiology"> Microbiology</a>
+                        <div class="svg2" id="microbiology-svg2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                    </div><br><br><br>
+                    <div class="Mass " >
+                        <div class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                                <path d="M4 11H2v3h2v-3zm5-4H7v7h2V7zm5-5v12h-2V2h2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1h-2zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3z"/>
+                            </svg>
+                        </div>
+                        <a id="mass-spec-tag" class="slide-from-bottom" href="#" data-tab="tab-mass-spec"> Mass Spec</a>
+                        <div class="svg2" id="mass-spec-svg2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item2 depart-item ">
+                    <div class="molec ">
+                        <div class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-droplet-half" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M7.21.8C7.69.295 8 0 8 0c.109.363.234.708.371 1.038.812 1.946 2.073 3.35 3.197 4.6C12.878 7.096 14 8.345 14 10a6 6 0 0 1-12 0C2 6.668 5.58 2.517 7.21.8zm.413 1.021A31.25 31.25 0 0 0 5.794 3.99c-.726.95-1.436 2.008-1.96 3.07C3.304 8.133 3 9.138 3 10c0 0 2.5 1.5 5 .5s5-.5 5-.5c0-1.201-.796-2.157-2.181-3.7l-.03-.032C9.75 5.11 8.5 3.72 7.623 1.82z"/>
+                            <path fill-rule="evenodd" d="M4.553 7.776c.82-1.641 1.717-2.753 2.093-3.13l.708.708c-.29.29-1.128 1.311-1.907 2.87l-.894-.448z"/>
+                            </svg>
+                        </div>
+                        <a id="molecular-tag" class="slide-from-bottom" href="microbiology.html" data-tab="tab-molecular"> Molecular</a>
+                        <div class="svg2" id="molecular-svg2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                    </div><br><br><br>
+                    <div class="Chem ">
+                        <div class="svg">
+                            <img  width="30" height="30" src="https://img.icons8.com/ios/50/chemistry-book.png" alt="chemistry-book"/>
+                        </div>
+                        <a id="chemistry-tag" class="slide-from-bottom" href="#" data-tab="tab-chemistry"> Chemistry</a>
+                        <div class="svg2" id="chemistry-svg2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item2 depart-item ">
+                    <div class="cyto ">
+                        <div class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-heart-fill" viewBox="0 0 16 16">
+                                <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5ZM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+                            </svg>
+                        </div>
+                        <a id="cytology-tag" class="slide-from-bottom" href="#" data-tab="tab-cytology"> Cytology</a>
+                        <div class="svg2" id="cytology-svg2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                    </div><br><br><br>
+                    <div class="hema ">
+                        <div class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+                                <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415z"/>
+                                <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z"/>
+                            </svg>
+                        </div>
+                        <a id="hematology-tag" class="slide-from-bottom" href="#" data-tab="tab-hematology"> Hematology</a>
+                        <div class="svg2" id="hematology-svg2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-grid2-1" id="tab-microbiology">
+                    <div class="grid2-img">
+                        <img  src="photo/01-Microbiology.png" alt="">
+                    </div>
+                    <div class="grid2-info">
+                        <h3>Microbiology</h3>
+                        <a href="#">View Full Test Directory ></a>
+                    </div>
+                    <span>Get the essential information you need to treat your patients and prevent the spread of disease with analytical chemical, microbiological, FDA deficiency, USP, and general testing with highest accuracy.</span>
+                </div>
+                <div class="service-grid2-1" id="tab-mass-spec">
+                    <div class="grid2-img">
+                        <img  src="photo/04-MassSpec.webp" alt="">
+                    </div>
+                    <div class="grid2-info">
+                        <h3>Mass spec</h3>
+                        <a href="#">View Full Test Directory ></a>
+                    </div>
+                    <span>Using high-resolution liquid chromatography and mass spectrometry, we provide one-shot multi-omic data via biochemical identification, relative quantification, and statistics, displayed clearly and efficiently for easy analysis.</span>
+                </div>
+                <div class="service-grid2-2" id="tab-molecular">
+                    <div class="grid2-img">
+                        <img  src="photo/02-Molecular.webp" alt="">
+                    </div>
+                    <div class="grid2-info">
+                        <h3>Molecular</h3>
+                        <a href="#">View Full Test Directory ></a>
+                    </div>
+                    <span>With thorough biophysical and biopharmaceutical characterization, formulation, and process development, physicians can manage and treat diseases with greater efficiency and efficacy.</span>
+                </div>
+                <div class="service-grid2-2" id="tab-chemistry">
+                    <div class="grid2-img">
+                        <img  src="photo/05-Chemistry.webp" alt="">
+                    </div>
+                    <div class="grid2-info">
+                        <h3>Chemistry</h3>
+                        <a href="#">View Full Test Directory ></a>
+                    </div>
+                    <span>Among our many other high-quality services, Centers Lab provides efficient synthesis and analysis of chemical compounds, maintained under all local, State, and national regulations, so you can present with confidence.</span>
+                </div>
+                <div class="service-grid2-1" id="tab-cytology">
+                    <div class="grid2-img">
+                        <img  src="photo/03-Cytology.webp" alt="">
+                    </div>
+                    <div class="grid2-info">
+                        <h3>Cytology</h3>
+                        <a href="#">View Full Test Directory ></a>
+                    </div>
+                    <span>Looking for experienced evaluation of fine needle aspirations, gynecological samples, or other specimens? Our detailed approach evaluates every detail, so you can make proactive decisions about patient care.</span>
+                </div>
+                <div class="service-grid2-1" id="tab-hematology">
+                    <div class="grid2-img">
+                        <img  src="photo/06-Hematology.webp" alt="">
+                    </div>
+                    <div class="grid2-info">
+                        <h3>Hematology</h3>
+                        <a href="#">View Full Test Directory ></a>
+                    </div>
+                    <span>Whether you’re looking to process blood counts, test for bleeding/clotting disorders, or evaluate effectiveness for chemotherapy, transplants, and more—our team provides prompt, safe evaluation of every sample.                </span>
+                </div>
+            </div>
+        </div>
+   </div> 
+   <div class="container3 ">
+        <h1 ><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg> Services that add value for every facility</h1>
+
+        <div class="bg-container3">
+            <div class="container3-box1">
+                <div class="container3-box1-item">
+                    <img src="photo/services-01.png" alt="">
+                    <h2>Drug Level Reporting</h2>
+                    <span>To enhance pharmacy and inventory
+                        control, we provide real-time reporting
+                        of individual therapeutic drug levels.</span>
+                </div>
+                <div class="container3-box1-item">
+                    <img src="photo/services-02.png" alt="">
+                    <h2>Remote Data Peripherals</h2>
+                    <span>Leverage our signature SmartChart
+                        tablets for instant, seamless data
+                        sharing and care response.</span>
+                </div>
+                <div class="container3-box1-item">
+                    <img src="photo/services-03.png" alt="">
+                    <h2>Abnormal Results Recap</h2>
+                    <span>Get daily, weekly or monthly reports of all
+                        critical/borderline results for an overview of
+                        population health and census mix.</span>
+                </div>
+            </div>
+            <div class="container3-box2">
+                <div class="container3-box2-item">
+                    <img src="photo/services-04.png" alt="">
+                    <h2>Electronic Order Tracking</h2>
+                    <span>Lean on error-proof online ordering, easy
+                        reordering, and long-term order tracking
+                        up to 12 months in advance.</span>
+                </div>
+                <div class="container3-box2-item">
+                    <img src="photo/services-05.png" alt="">
+                    <h2>Minimal Inhibitory Concentration (MIC) Testing</h2>
+                    <span>Preempt antibiotic resistance with our
+                        unique MIC testing for effective and accurate
+                        prescribing of correct antibiotic doses.</span>
+                </div>
+            </div>
+        </div>    
+   </div> 
+   <div class="container4 answer-bg">
+       
+        <h1><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg> Answers, reporting for duty.</h1>
+          
+          <div class="container4-answer-grid">
+            <div class="container4-box1">
+                <div class="container4-answer-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                        <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                      </svg>
+                    <h2>Drug Presence Reporting</h2>
+                    <span>Improve the effectiveness of per-patient
+                        drug targeting, and improve your bottom
+                        line, with cost-efficient reporting of
+                        antibiotics on culture.</span>
+                </div>
+                <div class="container4-answer-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                      </svg>
+                    <h2>Automatic Test Rescheduling</h2>
+                    <span>Ensure reliable continuity of care with
+                        automatic rescheduling and notification
+                        in the event of an unobtained specimen.</span>
+                </div>
+                <div class="container4-answer-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bar-chart-line" viewBox="0 0 16 16">
+                        <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2zm1 12h2V2h-2v12zm-3 0V7H7v7h2zm-5 0v-3H2v3h2z"/>
+                      </svg>
+                    <h2>Pathological Report Review</h2>
+                    <span>Rest easy with the knowledge that all
+                        patient reports pass our in-house medical
+                        director for review, signoff and quality
+                        assurance.</span>
+                </div>
+            </div>
+            <div class="container4-box2">
+                <div class="container4-answer-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                        <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                      </svg>
+                    <h2>Upfront Reimbursement Data</h2>
+                    <span>Know what you’re billing with prospective
+                        payment system (PPS) information that
+                        interfaces directly to most facility systems.</span>
+                </div>
+                <div class="container4-answer-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass" viewBox="0 0 16 16">
+                        <path d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702c0 .7-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 13v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351v-.702c0-.7.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2h-7z"/>
+                      </svg>
+                    <h2>24/7 Result Retrieval</h2>
+                    <span>Give your administration and care staff
+                        unfettered access to results through our
+                        web and automated voice response.</span>
+                </div>
+                <div class="container4-answer-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-month" viewBox="0 0 16 16">
+                        <path d="M2.56 11.332 3.1 9.73h1.984l.54 1.602h.718L4.444 6h-.696L1.85 11.332h.71zm1.544-4.527L4.9 9.18H3.284l.8-2.375h.02zm5.746.422h-.676V9.77c0 .652-.414 1.023-1.004 1.023-.539 0-.98-.246-.98-1.012V7.227h-.676v2.746c0 .941.606 1.425 1.453 1.425.656 0 1.043-.28 1.188-.605h.027v.539h.668V7.227zm2.258 5.046c-.563 0-.91-.304-.985-.636h-.687c.094.683.625 1.199 1.668 1.199.93 0 1.746-.527 1.746-1.578V7.227h-.649v.578h-.019c-.191-.348-.637-.64-1.195-.64-.965 0-1.64.679-1.64 1.886v.34c0 1.23.683 1.902 1.64 1.902.558 0 1.008-.293 1.172-.648h.02v.605c0 .645-.423 1.023-1.071 1.023zm.008-4.53c.648 0 1.062.527 1.062 1.359v.253c0 .848-.39 1.364-1.062 1.364-.692 0-1.098-.512-1.098-1.364v-.253c0-.868.406-1.36 1.098-1.36z"/>
+                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                      </svg>
+                    <h2>Antibiogram Reports</h2>
+                    <span>Improve infection control and prevention
+                        with periodic and on-demand
+                        antimicrobial susceptibility reports.</span>
+                </div>
+            </div>
+          </div>
+       
+   </div>
+   <div class="container5 container5-service" id="container5">
+        <div class="container5-grid-service">
+            <div class="service-con5-item">
+                <img src="photo/services-07.png" alt="">
+                <h3>Itemized Workload Reporting</h3>
+                <span>Get daily, weekly and monthly work-detail reports for a birdseye view of each facility’s lab-use volume and clinical gains.</span>
+            </div>
+            <div class="service-con5-item">
+                <img src="photo/services-08.png" alt="">
+                <h3>Facility Wellness Training</h3>
+                <span>Promote health and mitigate risk with our in-service lectures on pertinent topics like infectiousness, bedside practices, and more.</span>
+            </div>
+            <div class="service-con5-item">
+                <img src="photo/services-09.png" alt="">
+                <h3>STAT Testing Available</h3>
+                <span>Whenever needed, access emergency testing for time-sensitive subjects and get rapid result delivery, available 365 days a year.</span>
+            </div>
+            <div class="service-con5-item">
+                <img src="photo/services-10.png" alt="">
+                <h3>Expedited Report Delivery</h3>
+                <span>We take pride in leading the industry with the quickest average lab report turnaround times, all year long.</span>
+            </div>
+            <div class="service-con5-item">
+                <img src="photo/services-11.png" alt="">
+                <h3>Monthly Dietary Reports</h3>
+                <span>Tap into complimentary reports of patients’ nutritional values that assist with food-related care improvements.                </span>
+            </div>
+            <div class="service-con5-item">
+                <img src="photo/Dor-Yeshorim.png" alt="">
+                <h3>Dor Yeshorim Testing</h3>
+                <span>We are proud to do our part in eliminating the occurrence of debilitating genetic diseases in Jewish families through genetic screening.                </span>
+            </div>
+        </div>
+      
+
+   </div>
+   <div class="container6"id="container6">
+        <div class="container6-header">
+            <h3>IN NJ OR MD ?</h3> 
+           
+        </div>
+    <h2><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg> Treat yourself to the best walk-in patient services.</h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+                <p class="author">- John Keats</p>
+            </div>
+            
+            <div class="mySlides">
+                <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+                <p class="author">- Ernest Hemingway</p>
+            </div>
+            
+            <div class="mySlides">
+                <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+                <p class="author">- Thomas A. Edison</p>
+            </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+        </div>
+            
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+    
+   </div>
+   <div class="container7 "id="container7">
+    <h2>The Microlabs Difference</h2>
+        <div class="container7-bg">
+            <div class="container7-grid">
+                <div class="container7-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-hearts" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M11.5 1.246c.832-.855 2.913.642 0 2.566-2.913-1.924-.832-3.421 0-2.566ZM9 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm-9 8c0 1 1 1 1 1h10s1 0 1-1-1-4-6-4-6 3-6 4Zm13.5-8.09c1.387-1.425 4.855 1.07 0 4.277-4.854-3.207-1.387-5.702 0-4.276ZM15 2.165c.555-.57 1.942.428 0 1.711-1.942-1.283-.555-2.281 0-1.71Z"/>
+                    </svg>
+                    <h3>A 1:1 relationship.</h3>
+                    <span>We play a personal, local role to each facility
+                        we serve. You get a dedicated lab expert who is
+                        always one call away.</span>
+                </div>
+                <div class="container7-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-trophy-fill" viewBox="0 0 16 16">
+                        <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935z"/>
+                    </svg>
+                    <h3>All-volume capable.</h3>
+                    <span>Our advanced technologies enable us to run
+                        enormous quantities and varieties of tests
+                        with accuracy and speed.</span>
+                </div>
+                <div class="container7-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-balloon-heart-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.49 10.92C19.412 3.382 11.28-2.387 8 .986 4.719-2.387-3.413 3.382 7.51 10.92l-.234.468a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.235-.468ZM6.726 1.269c-1.167-.61-2.8-.142-3.454 1.135-.237.463-.36 1.08-.202 1.85.055.27.467.197.527-.071.285-1.256 1.177-2.462 2.989-2.528.234-.008.348-.278.14-.386Z"/>
+                    </svg>
+                    <h3>Ready to integrate.</h3>
+                    <span>From specimen collection and transport
+                        to processing and result delivery, we
+                        make it as easy as plug and play.</span>
+                </div>
+            </div>
+        </div>
+        <div class="container7-a">
+            <a href="#">Get Your Dedicated Rep ></a>
+        </div>
+   </div>
+   <div class="container8">
+        <footer>
+            <div class="container8-grid">
+                <div class="container8-item">
+                    <h3>Who We Are</h3>
+                    <a href="#">Who we are</a>
+                    <a href="#">Locations</a>
+                </div>
+                <div class="container8-item">
+                    <h3>Providers & Institutions</h3>
+                    <a href="#">Test Menu</a>
+                    <a href="#">Why Centers Laboratory</a>
+                    <a href="#">Patient Results</a>
+                    <a href="#">Featured Tests</a>
+                    <a href="#">Professional Services</a>
+                </div>
+                <div class="container8-item">
+                    <h3>Get in Touch</h3>
+                    <a href="#">Contact us</a>
+                    <a href="#">135 M.8</a>
+                    <a href="#">0909917691</a>
+                    
+                </div>
+                <div class="container8-item">
+                    <h3>Keep in Touch</h3>
+                    <a href="#">Get the latest in healthcare news when you sign up for Centerstage Newsletter.</a>
+                    <input type="text" placeholder="Email">
+                    
+                </div>
+                <div class="container8-item item4">
+                    <div class="logo-con8">
+                        <img width="100%" src="photo/ML_logo.png" alt="">    
+                    </div>
+                    <a href="#">Part of the Centers Health Care network, the Northeast’s postacute care leader.</a>
+                    <a href="#">Centers Health Care Corporate Site</a>
+                    
+                </div>
+
+            </div>
+        </footer>
+   </div> 
+
+
+   <script src="js/centerlabs.js"></script>
+   <script>
+    // Get all department links
+    const departmentLinks = document.querySelectorAll('.depart-item a');
+
+    // Add event listeners to handle click
+    departmentLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const tabId = link.getAttribute('data-tab');
+
+            // Hide all tabs
+            document.querySelectorAll('.service-grid2-1, .service-grid2-2').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show the corresponding tab
+            document.getElementById(tabId).classList.add('active');
+        });
+    });
+    </script>
+   <script>
+    // Function to handle the click event on "tag a" elements
+    function handleTagClick(tagId, svgId, divId) {
+        // Hide all .svg2 elements
+        document.querySelectorAll('.svg2').forEach(svg => {
+            svg.style.display = 'none';
+        });
+
+        // Show the corresponding .svg2 element
+        document.getElementById(svgId).style.display = 'block';
+
+        // Remove background color from all "div" elements
+        document.querySelectorAll('.service-item2').forEach(div => {
+            div.style.backgroundColor = '';
+        });
+
+        // Change the background color of the clicked "div" to skyblue
+        document.getElementById(divId).style.backgroundColor = 'skyblue';
+    }
+
+    // Add event listeners to the "tag a" elements
+    document.getElementById('microbiology-tag').addEventListener('click', function () {
+        handleTagClick('microbiology-tag', 'microbiology-svg2', 'micro');
+    });
+    document.getElementById('mass-spec-tag').addEventListener('click', function () {
+        handleTagClick('mass-spec-tag', 'mass-spec-svg2', 'Mass');
+    });
+    document.getElementById('molecular-tag').addEventListener('click', function () {
+        handleTagClick('molecular-tag', 'molecular-svg2', 'molec');
+    });
+    document.getElementById('chemistry-tag').addEventListener('click', function () {
+        handleTagClick('chemistry-tag', 'chemistry-svg2', 'Chem');
+    });
+    document.getElementById('cytology-tag').addEventListener('click', function () {
+        handleTagClick('cytology-tag', 'cytology-svg2', 'cyto');
+    });
+    document.getElementById('hematology-tag').addEventListener('click', function () {
+        handleTagClick('hematology-tag', 'hematology-svg2', 'hema');
+    });
+</script>
+
+
+  
+   
+   
+    
+
+
+
+</body>
+</html>

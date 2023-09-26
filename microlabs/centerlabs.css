@@ -1,0 +1,692 @@
+body{
+    box-sizing: border-box;
+    
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: rgb(146, 66, 170);
+    height: 50px;
+    width: 100%;
+    
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-top: 0;
+    justify-content: flex-end; /* Add this line to move the ul to the end (right) */
+    margin-right: 1rem;
+    
+}
+.navbar ul li{
+    margin-top: 1rem;
+    display: inline-block;
+        margin-right: 20px; /* Adjust the spacing between menu items */
+        position: relative;
+}
+.navbar ul li a{
+    padding: 2rem;
+    color: #fff;
+    text-decoration: none;
+    
+}
+.navbar svg:hover{
+    color: #333;
+}
+
+
+/* header2 */
+.container{
+    width: 90%;
+    height: auto;
+   margin-left: auto;
+   margin-right: auto;
+    
+}
+.navbar2{
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr; 
+    margin-top: 2rem;
+    width: 100%;
+    
+}
+.navbar2 ul{
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu{
+    /* margin-right: 20rem; */
+    width: 400px;
+    
+   
+}
+.menu ul{
+    justify-content:space-around;
+  
+}
+.navbar2 ul li a{
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+.navbar2 li a:hover{
+    color: rgba(146, 66, 170);
+}
+.navbar2 ul li a::before {
+content: "";
+display: block;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0;
+margin-bottom: -.5rem;
+height: 2px; /* Adjust the thickness of the underline */
+background-color: rgba(146, 66, 170); /* Adjust the color of the underline */
+transition: width 0.3s ease; /* Smooth transition for the underline effect */
+}
+
+.navbar2 ul li a:hover::before {
+    width: 100%; /* Underline effect from left to right on hover */
+}
+.contact{
+    
+    display: flex;
+    margin-left: 200px;
+    width: 500px;
+    
+}
+
+.contact ul{
+    justify-content: end;
+    
+}
+
+.contact a{
+    margin-right: 30px;
+}
+.contact button{
+    width: 30%;
+    height: 50px;
+    background-color: #130f0f;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: all .3s ease;
+    
+
+}
+.contact button:hover{
+    background-color:rgba(146, 66, 170) ;
+}
+
+/* hero section */
+.hero{
+    background-image: url(photo/home-banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    width: 100%;
+    height: 600px;
+    padding: 5px;
+}
+.hero-info {
+    padding: 5px;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.hero h1{
+    font-size: 3.5rem;
+    color: #2a227a;
+    font-weight: lighter;
+}
+.hero span{
+    line-height: 1.5rem;
+    color: #585757;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.hero button{
+    background-color: black;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+
+.container2{
+    width: 100%;
+    height: auto;
+   }
+  .department-info{
+    margin-top: 10rem;
+  }
+   .department-info a {
+        text-decoration: none;
+        margin-right: 10px;
+        margin-left: 100px;
+    }      
+    .whatever{
+        margin-left: 80px;
+        color: #2a227a;
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        font-weight: lighter;
+        position: relative;
+
+    }
+    .whatever h1 {
+font-size: 50px; /* Adjust the font size as needed */
+}
+
+.whatever h1::after {
+content: '';
+position: absolute;
+bottom: -5px; /* Adjust the distance of the line from the text */
+left: 0;
+width: 90%;
+height: 2px; /* Adjust the thickness of the line */
+background-color: rgb(94, 140, 158); /* Adjust the line color */
+}
+
+.container2  {
+    width: 100%;
+    height: auto;
+    opacity: 0; /* Initially hidden */
+    position: relative;
+    animation: slideIn 1s forwards; /* Use the slideIn animation */
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100%); /* Start at the bottom */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Move it to the top */
+    }
+  }
+  
+  
+  
+  .show-container2 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .department-info{
+      margin-top: 10rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+    }
+    .viewmore{
+        text-align: end;
+    }
+     .department-info a {
+          text-decoration: none;
+          margin-right: 10px;
+          margin-left: 100px;
+      }      
+      .whatever{
+          margin-left: 80px;
+          color: #2a227a;
+          font-size: 1.3rem;
+          letter-spacing: 2px;
+          font-weight: lighter;
+          position: relative;
+  
+      }
+      .whatever h1 {
+  font-size: 50px; /* Adjust the font size as needed */
+  }
+  
+  .whatever h1::after {
+  content: '';
+  position: absolute;
+  bottom: -5px; /* Adjust the distance of the line from the text */
+  left: 0;
+  width: 90%;
+  height: 2px; /* Adjust the thickness of the line */
+  background-color: rgb(94, 140, 158); /* Adjust the line color */
+  }
+         .grid-depart{
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+         }
+         .grid-depart div{
+          padding: 50px;
+          
+         }
+          .depart-item div a{
+          
+          
+          
+          text-decoration: none;
+          color: #2a227a;
+          font-size: 1.5rem;
+          letter-spacing: 1px;
+          font-weight: bold;
+          
+         }
+         .micro, .Mass, .molec, .Chem, .cyto, .hema {
+          background-color: #f4f6fa;
+          border-radius: 50px;
+         text-align: center;
+         
+          
+         }
+
+         .slide-from-bottom {
+            opacity: 0; /* Initially hidden */
+            transform: translateY(100%); /* Start at the bottom */
+            transition: opacity 1s ease, transform 1s ease; /* Add smooth transition */
+            }
+    
+            .slide-from-bottom.show-element {
+            opacity: 1; /* Make it visible */
+            transform: translateY(0); /* Move it to the top */
+            }
+
+    
+/* container3 */
+.container3{
+    width: 100%;
+    height: auto;
+}
+.container3 h1{
+    margin-left: 10%;
+    position: relative;
+    font-size: 3rem;
+    color: #2a227a ;
+    font-weight: lighter;
+
+}
+.container3 h1::after {
+content: '';
+position: absolute;
+bottom: -6px; /* Adjust the distance of the line from the text */
+left: 0;
+width: 90%;
+height: 1px; /* Adjust the thickness of the line */
+background-color: rgb(94, 140, 158); /* Adjust the line color */
+}
+
+.molec-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px;
+}
+
+.molec-info1{
+    padding: 50px;
+   margin-left: 10%;
+}
+.grid-molec{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    width: 450px;
+    
+}
+
+.molec-info1 a{
+    padding: 30px;
+    color: #333;
+    text-decoration: none;
+    line-height: 1.5rem;
+    letter-spacing: .5px;
+}
+.covid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 50px;
+}
+.covid-info{
+    
+    padding: 50px;
+    margin-left: 0;
+}
+.grid-covid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: auto;
+    
+}
+.grid-covid a{
+    padding: 30px;
+    color: #333;
+    text-decoration: none;
+    line-height: 1.5rem;
+    letter-spacing: .5px;
+}
+.container3 a svg{
+    color: red;
+}
+
+/* container4 */
+.container4{
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container4 h3{
+    color: #333;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.container4 h1{
+    color: #2a227a;
+    font-size: 3rem;
+    font-weight: lighter;
+    letter-spacing: .5px;
+    position: relative;
+}
+.container4 h1::after{
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 90%;
+    height: 1px;
+    background-color: #a8a2e6;
+
+}
+.container4-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+}
+.container4-item{
+    padding: 10px;
+  
+}
+.container4-grid a{
+    display: grid;
+    padding: 50px;
+    background-color: #f4f6fa;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2a227a;
+    letter-spacing:.5px;
+    text-align: center;
+}
+        .container3,
+        .container4 {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        header{
+            width: 100%;
+            
+            
+           
+        }
+        .container-navbar{
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+       .container5{
+        background-image: url(photo/covid-bg.jpg);
+        background-size: cover;
+        background-position: center center;
+        width: 90%;
+        height: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+       }
+       .container5 h3{
+        color: #d6c4ff;
+        padding: 120px;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        margin-left: 4rem;
+       }
+       .container5 h2{
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: lighter;
+        margin-left: 10rem;
+        line-height: 50px;
+        letter-spacing: 1px;
+       }
+       .container5-box{
+        color: rgb(221, 215, 215);
+        width: 500px;
+        margin-left: 10rem;
+        line-height: 30px;
+        letter-spacing: .8px;
+        font-size: 1.2rem;
+       } 
+
+
+       /* container 6 */
+
+       .container6{
+        width: 90%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container6-header{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .container6 h3 {
+        font-size: 1.2rem;
+        margin-left: 5rem;
+        color: #333;
+        /* padding: 10px; */
+    }
+    
+    .container6 h2{
+        font-size: 3rem;
+        font-weight: lighter;
+        margin-left: 4rem;
+        color: #2a227a;
+
+    }
+        /* Slideshow container */
+.slideshow-container {
+position: relative;
+background: #fff;
+}
+
+/* Slides */
+.mySlides {
+display: none;
+padding: 80px;
+text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -30px;
+padding: 16px;
+color: #888;
+font-weight: bold;
+font-size: 20px;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+position: absolute;
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+text-align: center;
+padding: 20px;
+background: #fff;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+
+
+.container7{
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container7 h2 {
+    text-align: center;
+    padding: 30px;
+    letter-spacing: .5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.container7-bg{
+    border-radius: 10px;
+    background-color: #f1f7fa;
+    padding: 50px;
+}
+.container7-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   
+    
+}
+.container7-item{
+    text-align: center;
+    padding: 3rem;
+    flex: 0 0 calc(33.33% - 1px); /* Adjust the width as needed and subtract 1px for the border */
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #cecce6; /* Add a right border to each item */
+    box-sizing: border-box;
+
+}
+.container7-item:last-child {
+    border-right: none; /* Remove the right border from the last item */
+}
+.container7-item h3{
+    font-size: 1.3rem;
+    
+}
+.container7-item span{
+    color: #333;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+
+
+.container5,
+        .container6,
+        .container7 {
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 0.5s, transform 0.5s;
+        }
+        .container7-a{
+            line-height: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 2rem;
+            margin-top: 2rem;
+        }
+        .container7-a a{
+            text-decoration: none;
+            color: #2a227a;
+
+        }
+
+
+/* container8 */
+.container8{
+    width: 100%;
+    height: auto;
+    
+    background-color: #59359b;
+}
+.container8-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.container8-item{
+    padding: 50px;
+    margin-left: 0;
+    margin-right: auto;
+    width: auto;
+    text-align: left;
+    margin-top: 3rem;
+    color: #fff;
+}
+.container8-item a{
+    color: #fff;
+    text-decoration: none;
+    font-size: .8rem;
+    display: grid;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+.container8-item input{
+    background-color: #7551b6;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    
+}
+.container8-item input::placeholder{
+    color:#ddd ;
+}
+.item4{
+    text-align: center;
+}
+
